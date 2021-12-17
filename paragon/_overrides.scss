@@ -1,2 +1,20 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: $gray-100;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary;
+    border-radius: 5px;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: $primary $gray-100;
+    scrollbar-gutter: stable;
+}
